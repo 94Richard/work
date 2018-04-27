@@ -1,0 +1,314 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta content="text/html; charset=utf-8"
+        http-equiv="Content-Type" />
+  <title>智慧查违”指挥中心实时监控平台</title>
+  <link href="css/Mode.css"
+        rel="stylesheet"
+        type="text/css" />
+  <link href="css/style.css"
+        rel="stylesheet" />
+  <link href="css/jquery.circliful.css"
+        rel="stylesheet"
+        type="text/css" />
+  <script src="script/jquery-1.8.3.min.js"
+        type="text/javascript"></script>
+  <script src="script/jquery.circliful.min.js"></script>
+  <script src="script/echarts.js"
+        type="text/javascript"></script><!--雷达效果-->
+
+  <script src="script/Chart.min.js"
+        type="text/javascript"></script>
+  <script src="script/DOM.js"
+        type="text/javascript"></script><!---->
+  <link href="css/report.css"
+        rel="stylesheet" />
+  <script src="http://webapi.amap.com/maps?v=1.4.5&key=e3650d84d6b49a751660788521bd584b"></script>
+  <script src="http://cache.amap.com/lbs/static/addToolbar.js"
+        type="text/javascript"></script>
+</head>
+<body id="body">
+  <div id="title">
+    <h1>智慧查违指挥中心实时监控平台</h1>
+  </div>
+  <div id="demoCon">
+    <!--Center Width*2100-->
+    <div class="AreaBox2"
+         id="Center">
+      <div class="ImageShow">
+        <iframe name="myframe"
+                frameborder="0"
+                height="952px"
+                scrolling="no"
+                src="http://cwt.skylartech.cn/new_show/"
+                width="100%"
+                onload="document.all['myframe'].style.width=myframe.document.body.scrollWidth"></iframe>
+      </div>
+    </div><!--Center The End-->
+    <!--LEFT Width * 750-->
+        <div id="Left">
+        <div id="LfetTop">
+            <div class="AreaBox"
+                 style="width: 480px">
+                <div id="Area1">
+                    <div class="Area_top">
+                        <span class="t">当日疑似违建上报</span>
+                        <div class="c">
+                            <span class="d value1">102</span> <span class="f">宗</span>
+                        </div>
+                    </div>
+                    <div class="Area_B">
+                        <ul>
+                            <li>
+                                <div class="c">
+                                    <span class="t">当月上报</span> <span class="d value2">2761</span> <span class="f">宗</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="c">
+                                    <span class="t">累计上报(2018)</span> <span class="d value3">7049</span> <span class="f">宗</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="Area2">
+                    <div class="Area_top">
+                        <span class="t">当日查实</span>
+                        <div class="c">
+                            <span class="d value4">18</span> <span class="f">宗</span>
+                        </div>
+                    </div>
+                    <div class="Area_B">
+                        <ul>
+                            <li>
+                                <div class="c">
+                                    <span class="t">当月查实</span> <span class="d value5">275</span> <span class="f">宗</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="c">
+                                    <span class="t">累计核实(2018)</span> <span class="d value6">818</span> <span class="f">宗</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="AreaBox"
+                 id="Area3">
+                <div id="myStat"
+                     style="float: left; padding-left: 50px">
+                    <div data-bgcolor="#eee"
+                         data-dimension="130"
+                         data-fgcolor="#61a9dc"
+                         data-fontsize="18"
+                         data-info="上报处理及时率"
+                         data-percent="99"
+                         data-text="99%"
+                         data-width="15"
+                         id="myStat1"
+                         style="float: left"></div>
+                    <div data-bgcolor="#eee"
+                         data-dimension="130"
+                         data-fgcolor="#73c95c"
+                         data-fontsize="18"
+                         data-info="应急响应及时率"
+                         data-percent="97"
+                         data-text="97%"
+                         data-width="15"
+                         id="myStat2"
+                         style="float: left"></div>
+                </div>
+            </div>
+        </div>
+        <div class="AreaBox"
+             id="HotMap">
+            <div id="gaodeMapContainer"></div>
+            <div class="report"
+                 id="reportDetail"></div><!--报告及地图-->
+        </div>
+        <div class="AreaBox"
+             id="DataTable">
+            <ul>
+                <li class="t_1">案件号</li>
+                <li class="t_2">社区</li>
+                <li class="t_3">地址</li>
+                <li class="t_4">描述</li>
+                <li class="t_5"
+                    style="text-indent: 12px">结果</li>
+            </ul>
+            <div id="demo"
+                 style="height: 250px;overflow: hidden; overflow: hidden; width: 730px;">
+                <div id="demo1">
+                    <table border="0"
+                           cellpadding="0"
+                           cellspacing="0"
+                           id="dataTable"
+                           style="border-collapse: collapse;"
+                           width="100%"></table>
+                </div>
+                <div id="demo2"></div>
+            </div>
+        </div>
+    </div><!--LEFT The End-->
+        <!--Right WIDTH*850-->
+        <div id="Right">
+            <div id="Righttop">
+                <div class="RTinner1 AreaBox">
+                    <div class="title">
+                        各街道违建统计图
+                    </div>
+                    <div class="inner">
+                        <div id="pieChartDynamic"></div>
+                        <div class="tushi">
+                            <dl>
+                                <dd><span class="t">龙岗街道</span></dd>
+                                <dd><span class="t">龙城街道</span></dd>
+                                <dd><span class="t">坂田街道</span></dd>
+                                <dd><span class="t">宝龙街道</span></dd>
+                                <dd><span class="t">布吉街道</span></dd>
+                                <dd><span class="t">横岗街道</span></dd>
+                                <dd><span class="t">吉华街道</span></dd>
+                                <dd><span class="t">南湾街道</span></dd>
+                                <dd><span class="t">平湖街道</span></dd>
+                                <dd><span class="t">坪地街道</span></dd>
+                                <dd><span class="t">园山街道</span></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="RTinner2 AreaBox">
+                    <div class="title">
+                        龙岗区违建巡查统计图
+                    </div>
+                    <div class="tushi">
+                        <dl>
+                            <dd><span class="t">已查实 1425</span></dd>
+                            <dd><span class="t">伪变化 10295</span></dd>
+                        </dl>
+                    </div>
+                    <div class="inner">
+                        <div class="data1">
+                            <div id="barChartStaticStreet"></div>
+                        </div>
+                        <div class="data2">
+                            <div id="pieChartStatic"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="AreaBox"
+                 id="RightCenter">
+                <div class="title"
+                     id="streetName"></div>
+                <div class="inner">
+                    <div class="data1">
+                        <div class="inner2"
+                             id="pieChartStaticStreet"></div>
+                    </div>
+                    <div id="barChartCommunity"></div>
+                </div>
+            </div>
+            <div id="RightBot">
+                <div class="ldArea2 AreaBox">
+                    <div class="title">
+                        违建预警参数
+                    </div>
+                    <div class="inner">
+                        <!--<canvas id="myChart"></canvas>-->
+                        <iframe frameborder="0"
+                                height="300px"
+                                scrolling="no"
+                                src="https://datav.aliyun.com/share/51f0b5d7b2998771f5facb431d2bf18c"
+                                width="300px"></iframe>
+                    </div>
+                </div>
+                <div class="zxtArea AreaBox">
+                    <div class="title">
+                        违建同��增长统计图
+                    </div>
+                    <div class="inner">
+                        <div class=""
+                             id="barChartYoYGrowth"
+                             style="height: 260px; width: 580px;"></div>
+                        <div class="tushi">
+                            <dl>
+                                <dd><span class="t">同比增长数量（宗）</span></dd>
+                                <dd><span class="t">同比增长比例（%）</span></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--Right The End-->
+
+  </div>
+  <script id="dtRollDataTmpl"
+        type="text/template">
+  <![CDATA[
+    {{#data}}
+    <tr class="{{cssRender}}">
+        <td class="t_1" dataid="{{id}}" coordinate="{{coordinate}}">{{case_number}}</td>
+        <td class="t_2">{{community}}</td>
+        <td class="t_3">{{name_desc}}</td>
+        <td class="t_4">{{description}}</td>
+        <td class="t_5">已核实</td>
+    </tr>
+    {{/data}}
+  ]]>
+  </script> 
+  <script id="reportDetailTmpl"
+        type="text/template">
+  <![CDATA[
+
+    <h1>疑似违章建筑监察结果报告</h1>
+    <div class="report-top">
+        <div class="report-top-right" style="width: 100%;">
+            <dl class="dl1">
+                <dt>案件号：{{case_number}}</dt>
+                                 <dt>社区：{{community}}</dt>
+                <dt>描述：{{description}}</dt>
+            </dl>
+        </div>
+    </div>
+    <div class="report-center">
+        <div class="p2">
+            <div style="float: left; height:200px; margin-right: 10px; text-align: center; width: 200px;">
+                <img src="http://h5.skylartech.cn/{{leftimg}}" style="height: 200px; border-radius:5px;" /><br /><span style="font-size: 13px;font-weight: bold;padding-top: 5px;padding-left: 65px;float: left;">{{leftdate}}</span>
+            </div>
+            <div style="float: left; height: 200px; margin-right: 10px; text-align: center; width: 200px; ">
+                <img src="http://h5.skylartech.cn/{{rightimg}}" style="height: 200px; border-radius:5px;" /><br /><span style="font-size: 13px;font-weight: bold;padding-top: 5px;padding-left: 65px;float: left;">{{rightdate}}</span>
+            </div>
+        </div>
+    </div>
+  ]]>
+  </script> 
+  <script src="script/InitCharts.js"></script> 
+  <script src="script/InitRollTable.js"></script> 
+  <script src="script/GaodeMap.js"></script> 
+  <script src="script/mustache.min.js"></script> 
+  <script type="text/javascript">
+  //<![CDATA[
+
+    //页面初始化
+    $(function() {
+        //初始化及时率图表
+        initCircliful();
+        //初始化饼状图表（静态）
+        initPieChartStatic();
+        //初始化饼状图表（动态）
+        initPieChartDynamic();
+        //初始化滚动表格数据
+        initRollTableData();
+        //初始化某街道柱状图表（静态）
+        initBarChartStaticStreet(barChartStaticStreetData[0]);
+        //初始化违建同比增长统计数据
+        initBarChartYoYGrowth(barChartYoYGrowthData);
+    });
+  //]]>
+  </script>
+</body>
+</html>

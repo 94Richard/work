@@ -1,0 +1,62 @@
+div.sel {
+    background: #FFF;
+    font-size: 12px;
+}
+
+#headerInfo {
+    width: 100%;
+    height: 40px;
+    background: #111d41;
+    position: fixed;
+    color: #b4b4b4;
+    line-height: 3.2;
+    top: 0;
+    z-index: 9999; overflow: hidden;
+    font-size: 13px;
+}
+
+div.mv {
+    margin-left: 2.5%; line-height: 2.6;
+    display: inline;
+
+}
+
+.f_r {
+    float: right
+}
+
+.f_l {
+    float: left
+}
+
+div.hi {
+    margin: 0 auto;
+    text-align: center; display: inline-block;
+
+}
+
+#empty p{ text-align: center;}
+span.hidden_hot{ 
+	border: 1px solid #0c75de;
+    background: rgb(17, 29, 65);
+	color: #78a9ce; 
+	border-radius: 3px; 
+	display: inline-block; 
+	width: 87px;
+    height:30px;  
+    line-height: 2.5; 
+    cursor: pointer; 
+    text-align:center; 
+    position: absolute; top:7px; }
+div.layui-layer-hui .layui-layer-content{ color: #FFF;}
+.date_select{
+	margin-left: 25px;
+	padding: 0 5px;
+    height:28px;
+    line-height:28px;
+    width: 190px;
+    text-align: center; 
+    color: #263954;
+    border: 1px solid #0c75de;
+	background:#111d41;
+}

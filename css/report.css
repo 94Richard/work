@@ -1,0 +1,51 @@
+﻿
+/*通用样式结束*/
+
+.report{ width: 730px; height: auto; overflow: hidden; margin: 0 auto; }
+.report h1{ width: 39%; height: 50px; margin:0; line-height: 50px; text-align: center; font-size: 16px; border-bottom: 1px solid #afafaf;}
+.report-top{ width: 41%; height: 200px; overflow: hidden;     float: left;}
+.report-top-left{ width: 280px; height: auto; float: left;border-right: 1px solid #afafaf; box-sizing: border-box;}
+.report-top-left h3{ width: 100%; height: 30px; line-height: 30px; text-align: center; border-bottom: 1px solid #afafaf;}
+.report-top-left h3 em{ color: red;}
+.report-top-left-img{ width: 280px; height: 260px; padding: 8px 10px;border-bottom: 1px solid #afafaf;}
+.report-top-left img{ width: 100%; height: 100%;}
+.report-top-right{ width: 570px; height: auto; float: right;}
+
+.report-top-right dl{ width:270px; float:left; height:105px; line-height:30px; }
+.report-top-right dl.dl2{ float:right;}
+.report-top-right dl dt{ font-weight:800;}
+.report-top-right dl.dl1 dt{ margin-left:15px; font-size:13px}
+
+
+
+.report-top-right h3{ width: 100%; height: 30px; text-align: center; line-height: 30px;border-bottom: 1px solid #afafaf; float: left;}
+.report-top-right p{width: 100%; height: 36px; line-height: 36px; text-align: center; border-bottom: 1px solid #afafaf; float: left;}
+
+.coordinate{ width: 100%; height: auto; overflow: hidden;border-bottom: 1px solid #afafaf; }
+.coordinate h3{ width: 100%; height: 30px; text-align: center; line-height: 30px;border-bottom: 1px solid #afafaf;}
+.coordinate p{width: 850px; height: 345px;  text-align: center;  padding: 5px; box-sizing: border-box; }
+.coordinate .p1{overflow-x:auto; overflow: -webkit-paged-x;height: 365px;}
+.coordinate p img{ float: left; width:840px; height: 335px;}
+
+.report-bottom{ width: 100%; height: auto; overflow: hidden;border-bottom: 1px solid #afafaf;}
+.report-bottom h3{ width: 100%; height: 30px; line-height: 30px; border-bottom: 1px solid #afafaf; text-indent: 10px;}
+.report-bottom p{ width: 100%; height:75px; line-height: 25px; border-bottom: 1px solid #afafaf;}
+.report-bottom label{ width: 33.3%; float: left; height: 30px; line-height: 30px; font-weight: bold; font-size: 14px;text-indent: 10px;border-right: 1px solid #afafaf; box-sizing: border-box;}
+.report-bottom label:last-child{ border: none;}
+
+
+.report-center{ width: 59%; height: 250px; overflow: hidden;    float: left;    margin-top: -35px;}
+.report-center h3{ width: 100%; height: 30px; text-align: center; line-height: 30px;border-bottom: 1px solid #afafaf;}
+.report-center ul{}
+.report-center ul li{ width:283px; float: left;border-right: 1px solid #afafaf; box-sizing: border-box;}
+.report-center ul li:nth-child(3n){ border:none; width: 284;}
+.report-center ul li h4{ width: 100%; height: 30px; text-align: center; line-height: 30px;border-bottom: 1px solid #afafaf;}
+.report-center ul li p{border-bottom: 1px solid #afafaf; width: 100%; height: 282px; padding: 15px; box-sizing: border-box;}
+.report-center ul li p img{ width: 253px; height: 253px;}
+
+
+.p2{overflow-x:auto; overflow: -webkit-paged-x;height: 370px;width: 850px; text-align: center;  padding: 5px; box-sizing: border-box;border-bottom: 1px solid #afafaf; }
+.p2 img{ float: left; height: 335px;overflow: hidden;margin-left: 3px}
+.p2 li label{ width: 100%; height: 335px; overflow: hidden; display: block;}
+.p2 li h4{ width: 100%; height: 30px; line-height: 30px; text-align: center;}
+

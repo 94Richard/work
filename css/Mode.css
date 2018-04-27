@@ -1,0 +1,322 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/*ALL*/
+body,td,th {
+	font-size: 12px;
+	color: #93ccf5;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+    /* width:3800px; */
+    width:100%;
+	/*height:1075px;*/
+	background:#1c2a4f;
+	overflow-y:auto;
+	overflow-X:auto;
+	font-family:"微软雅黑";
+}
+ul li,ul,a,h1,h2,h3,h5,h5{
+	margin:0;
+	padding:0;
+	}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+ul,ul li{ font-style:normal;
+          list-style:none;
+		  list-style-type:none;
+		  }
+div.clear{ width:100%; height:2px; clear:both;}
+
+/*颜色规范*/
+
+/*主要用色*/
+.BGcolor_A{
+	background:#1c2a4f;}
+.BGcolor_B{
+	background:#111e41}
+.BGcolor_C{
+	background:#0e1734}
+	
+	
+/*辅助用色*/
+.BGcolor_D{/*Success*/
+	background:#72c95b;}
+.BGcolor_E{/*Warning*/
+	background:#ffa72a}
+.BGcolor_F{/*Error or Danger*/
+	background:#fa4f31}
+	
+h1{ color:#99d4ff;
+    font-size:16px;}
+	
+	
+/*阴影效果*/
+.AreaBox{ -webkit-box-shadow: #04618b 3px 3px 3px;  
+   -moz-box-shadow: #04618b 3px 3px 3px;  
+   box-shadow: #04618b 3px 3px 3px;  
+   background: #0e1734;
+   border-radius:8px;
+   border:3px #345197 solid;
+    }
+.AreaBox2{  
+   background: #0e1734;
+   border-radius:8px;
+   border:3px #345197 solid;
+    }
+	
+/*框架布局*/
+
+
+   /*标题部分*/
+div#title{
+	height:60px;
+	width:100%;
+	text-align:center;
+	}
+div#title H1{ font-size:26PX;
+               display:block;
+			   width:98%;
+			   height:60px;
+			   padding:0;
+			   margin:0 auto;
+			   text-align:center;
+			   line-height:70px;}
+/*主容器*/
+  #demoCon{
+	  width:100%;
+	  /*height:960px;*/
+	  margin:10px auto;
+	  overflow:hidden;
+	  }
+  /*底部容器*/
+  /*左侧布局*/
+  #Left{
+  /*width:750px;*/
+  width:50%;
+  height:960px;
+  /*float:left;*/
+  margin-left:15px;
+  overflow:hidden;
+  position:relative;
+ }
+  
+  
+       div#LfetTop{ width:100%;
+	   height:auto;
+	   overflow:hidden;
+	   clear:both;
+	   position:absolute;
+       top:0;
+	   left:0;
+	   }
+	   
+	   div#LfetTop div.AreaBox{
+	       height:130px;
+	       /*width:230px;*/
+           width:60%;
+	       float: left;
+	   }
+
+       #gaodeMapContainer {
+           width:730px;
+           height:210px;
+		   border-radius:5px;
+       }
+
+	   
+       div#LfetTop div#Area1{ float:left;}
+	   div#LfetTop div#Area2{ float:right; margin-right:20px;}
+	   div#LfetTop div#Area3{ float:right; margin-right:5px;width:40%}
+
+       div#LfetTop div.Area_top span.t{
+		   display:block;
+		   width:98%;
+		   clear:both;
+		   font-size:16px;
+		   text-align:left;
+		   margin-top:5px;
+		   height:25px;
+		   line-height:25px;
+		   font-weight:bold;
+		   text-indent:35px;}
+	   div#LfetTop div.Area_top div.c{ 
+	                      height:40px;
+	                      clear:both;
+						  text-align:center;
+						  margin-top:5px;
+						  position:relative;						 
+						  }
+	   div#LfetTop div.Area_top div.c span.d{ display:block; width:35px; height:35px; border-radius:5px;   line-height:35px; font-size:36px; margin-top:2px; position:absolute; right:66px;}
+	   div#LfetTop div.Area_top div.c span.f{ display:block; width:35px; height:35px;  color:#93ccf5; line-height:55px; margin-top:2px; position:absolute; right:8px; bottom:3px;}
+	   div#Area1 span.d{color:#0b75df;}
+	   div#Area2 span.d{color:#ffa72b;}
+	   div#Area3 span.d{color:#0fc781;}
+	   
+       
+
+	   div#LfetTop div.Area_B ul{ width:100%;
+	   height:auto;
+	   overflow:hidden;
+	   display:block;}
+	   div#LfetTop div.Area_B li{ width:100px; height:47px; overflow:hidden;
+	   float:left; text-align:center;  margin-left:10px;}
+	   div#LfetTop div.Area_B span.t{ display:block;
+		   width:100%;
+		   clear:both;
+		   text-align:center;
+		   font-weight:bold;}
+		div#LfetTop div.Area_B div.c span.d{ color:#fff;  font-size:24px;}
+	    div#LfetTop div.Area_B div.c span.f{ }
+	 
+    
+	div#HotMap{  height:460px; overflow:hidden; padding:5px; width:731px; 
+	   position:absolute;
+	   top:153px;
+	 
+ }
+ div#HotMap .hotMap{ width:731px; height:375px; border-radius:5px; overflow:hidden;}
+ div#HotMap .hotMap img{ width:100%; height:100%}
+ 
+ div#HotMap div.tit{ position:absolute;  bottom:15px; width:700px; height:36px; line-height:36px; display:block; text-align:right; font-size:24px; color:#fa4f31;
+ background:none; padding-right:30px;   left:15px; font-weight:bold;}
+ 
+ div#DataTable{
+	   width:731px;
+	   height:290px;
+	   padding:5px;
+	   overflow:hidden;
+	   position:absolute;
+	   bottom:0;
+	   
+	   
+	   }
+  div#DataTable td{  padding:3px 0; text-align:center; display:block; float:left; height:24px; line-height:25px;  text-align:center;  overflow:hidden; }
+  div#DataTable td.t_1{ width:21%;}
+  div#DataTable td.t_2{ width:10%;}
+  div#DataTable td.t_3{ width:30%;}
+  div#DataTable td.t_4{ width:30%;}
+  div#DataTable td.t_5{ width:8%;}
+  div#DataTable tr.first td{ background:#1c2a4f}
+  div#DataTable tr.serrcn{ background:#0e1734}
+  
+  div#DataTable ul{ display:block; width:100%; height:auto; overflow:hidden; }
+  div#DataTable ul li{ display:block; float:left; line-height:25px; padding:5px 0; text-align:center;  color:#FFF; font-size:14px; font-weight:bold; overflow:hidden;}
+  div#DataTable ul li.t_1{ width:21%;}
+  div#DataTable ul li.t_2{ width:10%;}
+  div#DataTable ul li.t_3{ width:30%;}
+  div#DataTable ul li.t_4{ width:30%;}
+  div#DataTable ul li.t_5{ width:8%;}
+   
+  
+  
+  #Center{
+      /*width:2100px;*/
+      width:100%;
+      height:952px;
+      /*float:left;*/
+      margin-left:35px;
+      overflow:hidden;
+      position:relative;
+  
+  }
+  div.ImageShow{
+	  width:100%;
+	  height:100%;
+	  overflow:hidden;
+	  
+	  }
+  div.ImageShow img{ width:100%; height:100%; }
+  div.ImageShowLeftCon{ width:30%;
+  height:100%;
+  position:absolute;
+  left:0;
+  top:0;
+  }
+  div.ImageShowLeftCon ul{ display:block; width:100%;
+  height:50%;
+  clear:both;}
+  div.ImageShowLeftCon li{ display:block; float:left; width:50%; height:100%; overflow:hidden;}
+  div.ImageShowLeftCon li img{ width:100%; height:100%;}
+  div.ImageShowLeftCon div.Image360_A{ width:100%; height:50%; clear:both;}
+  div.ImageShowLeftCon div.Image360_A img{width:100%; height:100%;}
+  
+  
+  div.ImageShowRightCon{ position:absolute; right:0; top:0; width:20%;
+  height:100%; overflow:hidden; }
+  div.ImageShowRightCon li{ display:block; width:100%; height:260px; clear:both;}
+  div.ImageShowRightCon li img{ width:100%; height:100%;}
+  
+  div#Right{width:50%;
+  height:auto;
+  float:right;
+  margin-right:15px;
+    }
+  
+  div#Righttop{ width:100%; height:300px; clear:both;  }
+  div#Righttop div.data1 { position:relative; width:70%; height:210px; padding-top:35px; margin-left:145px;}
+  div#Righttop div#barChartStaticStreet{ width:100%; height:200px; float:left; margin-top:-52px;}
+  div#Righttop div.data2{ position:absolute; width:210px; height:210px; z-index:999; left:-40px; top:45px; }
+  div#Righttop div#pieChartStatic{ width:200px; height:200px; float:left; }
+  
+  div#Righttop div.RTinner1{ width:285px; float:left; height:auto; }
+  div#Righttop div.RTinner2{ float:right; width:500px; margin-right:5px; position:relative;}
+  
+  div#Righttop div.RTinner2 .inner,div#Righttop div.RTinner1 .inner{ height:220px; width:100%; padding:5px; position:relative;}
+  div#Righttop div.AreaBox div.title{ height:35px; width:100%; line-height:35px; text-align:center; background:#243666; font-size:16px; font-weight:600;}
+  div#Righttop div#pieChartDynamic{ width:220px; height:220px; float:left; position:relative; left:-20px;}
+  
+  div#Righttop div.RTinner1 dl{ display:block; width:85px; height:auto; overflow:hidden; position:absolute; top:0; right:15px; padding:0;}
+  div#Righttop div.RTinner1 dd{ height:18px; width:100%; line-height:18px; text-align:left;  margin:0; line-height:18px; font-size:12px;}
+  div#Righttop div.RTinner1 dd span{ display:block; float:left;}
+  div#Righttop div.RTinner1 dd span.m{ height:10px; width:10px; border-radius:3px; margin-top:4px;}
+  div#Righttop div.RTinner1 dd span.t{ float:left; height:100%; line-height:18px; margin-left:8px;}
+  
+  div#Righttop div.RTinner2 dl{ display:block; width:100px; height:auto; overflow:hidden; position:absolute; top:55px; left:15px; padding:0;}
+  div#Righttop div.RTinner2 dd{ height:25px; width:100%; line-height:25px; text-align:left;  margin:0; font-size:12px;}
+  div#Righttop div.RTinner2 dd span{ display:block; float:left;}
+  div#Righttop div.RTinner2 dd span.m{ height:13px; width:13px; border-radius:3px; margin-top:7px;}
+  div#Righttop div.RTinner2 dd span.t{ float:left; height:100%; line-height:25px; margin-left:8px;}
+  
+
+  div#RightCenter{ width:820px; height:350px; clear:both; position:relative; margin-top:10px;}
+  div#RightCenter div.title{ height:35px; width:100%; line-height:35px; text-align:center; background:#243666; font-size:16px; font-weight:600;}
+  div#RightCenter div.data1{ width:250px; height:210px; position:absolute; left:5px; top:65px;}
+  div#RightCenter div#pieChartStaticStreet{ width:100%; height:100%;}
+  div#RightCenter div#barChartCommunity{ width:580px; height:250px; position:absolute; right:15px; top:45px;}     
+  
+ 
+  div#RightBot{ width:100%; height:auto; overflow:hidden; margin-top:20px; clear:both;}
+ 
+ 
+ 
+  
+
+  
+
+    div.ldArea2{ width:240px; height:245px; float:left; overflow:hidden; margin-top:20px}
+    div.ldArea2 div.title{ height:35px; width:100%; line-height:35px; text-align:center; background:#243666; font-size:16px; font-weight:600;}
+    div.ldArea2 div.inner{ width:300px;  height:300px; overflow:hidden; position:relative;  margin-left: -24px;float:left}
+  
+  div.zxtArea{ width:565px; height:245px; float:right; overflow:hidden; margin-top:20px; margin-right:5px; font-size:16px; font-weight:600;}
+  div.zxtArea div.title{ height:35px; width:100%; line-height:35px; text-align:center; background:#243666;}
+  div.zxtArea div.inner{ width:565px;  height:auto; overflow:hidden; position:relative; margin-top: -46px;    margin-left: -8px;}
+
+
+div#RightBot div.zxtArea dl{ display:block; width:360px; height:auto; overflow:hidden; position:absolute; top:210px; left:143px; padding:0;    float: left;}
+div#RightBot div.zxtArea dd{ height:25px; width:40%; line-height:25px; text-align:left;  margin:0; font-size:12px;    float: left;}
+div#RightBot div.zxtArea dd span{ display:block; float:left;}
+div#RightBot div.zxtArea dd span.m{ height:13px; width:13px; border-radius:3px; margin-top:7px;}
+div#RightBot div.zxtArea dd span.t{ float:left; height:100%; line-height:25px; margin-left:8px;}

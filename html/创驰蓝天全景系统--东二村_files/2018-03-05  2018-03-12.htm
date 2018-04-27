@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html><head>
+    <title>H5 全景测试</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <link rel="STYLESHEET" href="2018-03-05%20%202018-03-12_data/contrast_curren_vs.css">
+<link rel="stylesheet" href="layer.css" id="layui_layer_skinlayercss" style=""></head>
+<body>
+<div class="sel" id="headerInfo" style="position: relative; height:50px;">
+    <i class="fa fa-send"></i>
+    <span style="margin-left:1%">当前场景:LG-dec-东二村</span>
+    <span style="margin-left:1%;" id="time_span">对比时间:2018-03-12：2018-03-05</span>
+    <span style="margin-left:3%;">左侧场景:</span>
+    <span><select class="date_select" data-id="0" id="date_select_left">
+        <option value="0">--请选择时间--</option>
+        <option data-time="1520784000" selected="selected" value="34996">2018-03-12            ★            </option><option data-time="1520179200" value="34673">2018-03-05            ★            </option><option data-time="1519574400" value="34399">2018-02-26            ★            </option><option data-time="1519401600" value="34322">2018-02-24            ★            </option><option data-time="1518105600" value="33896">2018-02-09            ★            </option><option data-time="1517760000" value="33645">2018-02-05            ★            </option><option data-time="1517241600" value="33381">2018-01-30            ★            </option><option data-time="1516550400" value="33063">2018-01-22            ★            </option><option data-time="1515945600" value="32758">2018-01-15            ★            </option><option data-time="1515513600" value="32484">2018-01-10            ★            </option><option data-time="1514908800" value="32251">2018-01-03            ★            </option><option data-time="1514131200" value="31976">2017-12-25            ★            </option><option data-time="1513526400" value="31798">2017-12-18            ★            </option><option data-time="1513267200" value="31752">2017-12-15            ★            </option><option data-time="1512921600" value="31530">2017-12-11            ★            </option><option data-time="1512576000" value="31428">2017-12-07            ★            </option><option data-time="1512316800" value="31207">2017-12-04                        </option><option data-time="1511971200" value="31121">2017-11-30            ★            </option><option data-time="1511712000" value="30978">2017-11-27            ★            </option><option data-time="1511366400" value="30861">2017-11-23            ★            </option><option data-time="1511107200" value="30734">2017-11-20            ★            </option><option data-time="1510761600" value="30560">2017-11-16                        </option><option data-time="1510588800" value="30504">2017-11-14            ★            </option><option data-time="1509897600" value="30289">2017-11-06            ★            </option><option data-time="1509465600" value="30207">2017-11-01            ★            </option><option data-time="1508860800" value="29920">2017-10-25            ★            </option><option data-time="1508169600" value="29680">2017-10-17            ★            </option><option data-time="1507478400" value="29490">2017-10-09            ★            </option><option data-time="1506960000" value="29425">2017-10-03                        </option><option data-time="1506614400" value="29337">2017-09-29            ★            </option><option data-time="1506441600" value="29217">2017-09-27                        </option><option data-time="1506009600" value="29079">2017-09-22            ★            </option><option data-time="1505059200" value="28692">2017-09-11                        </option><option data-time="1504627200" value="28539">2017-09-06                        </option><option data-time="1503936000" value="28176">2017-08-29                        </option><option data-time="1503331200" value="27902">2017-08-22                        </option><option data-time="1502640000" value="27417">2017-08-14                        </option><option data-time="1502121600" value="27052">2017-08-08                        </option><option data-time="1501516800" value="26729">2017-08-01                        </option><option data-time="1500912000" value="26304">2017-07-25            ★            </option><option data-time="1500393600" value="25835">2017-07-19            ★            </option><option data-time="1499616000" value="25414">2017-07-10            ★            </option><option data-time="1499356800" value="25218">2017-07-07                        </option><option data-time="1499184000" value="24955">2017-07-05                        </option><option data-time="1498147200" value="24581">2017-06-23                        </option><option data-time="1496764800" value="23779">2017-06-07                        </option><option data-time="1496332800" value="23394">2017-06-02                        </option><option data-time="1495468800" value="22738">2017-05-23                        </option><option data-time="1495123200" value="22542">2017-05-19                        </option><option data-time="1494345600" value="21933">2017-05-10            ★            </option><option data-time="1493913600" value="21489">2017-05-05                        </option><option data-time="1493136000" value="20978">2017-04-26                        </option><option data-time="1492963200" value="20800">2017-04-24                        </option><option data-time="1492012800" value="20215">2017-04-13                        </option><option data-time="1491667200" value="19806">2017-04-09                        </option><option data-time="1490976000" value="19327">2017-04-01                        </option><option data-time="1490457600" value="18781">2017-03-26                        </option><option data-time="1489766400" value="18336">2017-03-18                        </option><option data-time="1488988800" value="17717">2017-03-09                        </option><option data-time="1488470400" value="17377">2017-03-03                        </option><option data-time="1487779200" value="16819">2017-02-23                        </option><option data-time="1487088000" value="16331">2017-02-15                        </option><option data-time="1486656000" value="16044">2017-02-10                        </option><option data-time="1485100800" value="15435">2017-01-23                        </option><option data-time="1484841600" value="15111">2017-01-20                        </option><option data-time="1484496000" value="14727">2017-01-16                        </option><option data-time="1483632000" value="14252">2017-01-06                        </option><option data-time="1483027200" value="13861">2016-12-30            ★            </option><option data-time="1482336000" value="13298">2016-12-22                        </option><option data-time="1481644800" value="12980">2016-12-14                        </option><option data-time="1481299200" value="12673">2016-12-10                        </option><option data-time="1480608000" value="12245">2016-12-02                        </option><option data-time="1480262400" value="11952">2016-11-28                        </option><option data-time="1479398400" value="11470">2016-11-18                        </option><option data-time="1478880000" value="10915">2016-11-12                        </option><option data-time="1478361600" value="10552">2016-11-06                        </option><option data-time="1478102400" value="10497">2016-11-03                        </option><option data-time="1477670400" value="10074">2016-10-29            ★            </option><option data-time="1476374400" value="9419">2016-10-14            ★            </option><option data-time="1475164800" value="8880">2016-09-30            ★            </option><option data-time="1474732800" value="8501">2016-09-25                        </option><option data-time="1474300800" value="8265">2016-09-20                        </option><option data-time="1473523200" value="7699">2016-09-11                        </option><option data-time="1472745600" value="7346">2016-09-02                        </option><option data-time="1472140800" value="6906">2016-08-26                        </option><option data-time="1471190400" value="6211">2016-08-15                        </option><option data-time="1470499200" value="910">2016-08-07            ★            </option><option data-time="1469635200" value="909">2016-07-28            ★            </option><option data-time="1469030400" value="908">2016-07-21                        </option><option data-time="1468684800" value="907">2016-07-17                        </option><option data-time="1467907200" value="906">2016-07-08                        </option><option data-time="1467216000" value="905">2016-06-30                        </option><option data-time="1466611200" value="904">2016-06-23                        </option><option data-time="1466179200" value="903">2016-06-18                        </option><option data-time="1465747200" value="902">2016-06-13                        </option><option data-time="1464883200" value="901">2016-06-03            ★            </option>    </select></span>
+    <span style="  left: 45%;" id="hidden_hot" class="hidden_hot">隐藏热点</span>
+    <span style="left: 50.5%;" class="hidden_hot" id="closeIframe">关闭对比</span>
+
+    <div style="float: right; display: inline; margin-right: 3%;">
+        <span>右侧场景切换：</span>
+        <select id="date_select_right" class="date_select" data-id="1"><option value="0">--请选择时间--</option>
+    <option data-time="1520784000" value="34996">2018-03-12</option><option data-time="1520179200" selected="selected" value="34673">2018-03-05★</option><option data-time="1519574400" value="34399">2018-02-26</option><option data-time="1519401600" value="34322">2018-02-24</option><option data-time="1518105600" value="33896">2018-02-09</option><option data-time="1517760000" value="33645">2018-02-05</option><option data-time="1517241600" value="33381">2018-01-30</option><option data-time="1516550400" value="33063">2018-01-22</option><option data-time="1515945600" value="32758">2018-01-15</option><option data-time="1515513600" value="32484">2018-01-10</option><option data-time="1514908800" value="32251">2018-01-03</option><option data-time="1514131200" value="31976">2017-12-25</option><option data-time="1513526400" value="31798">2017-12-18</option><option data-time="1513267200" value="31752">2017-12-15</option><option data-time="1512921600" value="31530">2017-12-11</option><option data-time="1512576000" value="31428">2017-12-07</option><option data-time="1512316800" value="31207">2017-12-04</option><option data-time="1511971200" value="31121">2017-11-30</option><option data-time="1511712000" value="30978">2017-11-27</option><option data-time="1511366400" value="30861">2017-11-23</option><option data-time="1511107200" value="30734">2017-11-20</option><option data-time="1510761600" value="30560">2017-11-16</option><option data-time="1510588800" value="30504">2017-11-14</option><option data-time="1509897600" value="30289">2017-11-06</option><option data-time="1509465600" value="30207">2017-11-01</option><option data-time="1508860800" value="29920">2017-10-25</option><option data-time="1508169600" value="29680">2017-10-17</option><option data-time="1507478400" value="29490">2017-10-09</option><option data-time="1506960000" value="29425">2017-10-03</option><option data-time="1506614400" value="29337">2017-09-29</option><option data-time="1506441600" value="29217">2017-09-27</option><option data-time="1506009600" value="29079">2017-09-22</option><option data-time="1505059200" value="28692">2017-09-11</option><option data-time="1504627200" value="28539">2017-09-06</option><option data-time="1503936000" value="28176">2017-08-29</option><option data-time="1503331200" value="27902">2017-08-22</option><option data-time="1502640000" value="27417">2017-08-14</option><option data-time="1502121600" value="27052">2017-08-08</option><option data-time="1501516800" value="26729">2017-08-01</option><option data-time="1500912000" value="26304">2017-07-25</option><option data-time="1500393600" value="25835">2017-07-19</option><option data-time="1499616000" value="25414">2017-07-10</option><option data-time="1499356800" value="25218">2017-07-07</option><option data-time="1499184000" value="24955">2017-07-05</option><option data-time="1498147200" value="24581">2017-06-23</option><option data-time="1496764800" value="23779">2017-06-07</option><option data-time="1496332800" value="23394">2017-06-02</option><option data-time="1495468800" value="22738">2017-05-23</option><option data-time="1495123200" value="22542">2017-05-19</option><option data-time="1494345600" value="21933">2017-05-10</option><option data-time="1493913600" value="21489">2017-05-05</option><option data-time="1493136000" value="20978">2017-04-26</option><option data-time="1492963200" value="20800">2017-04-24</option><option data-time="1492012800" value="20215">2017-04-13</option><option data-time="1491667200" value="19806">2017-04-09</option><option data-time="1490976000" value="19327">2017-04-01</option><option data-time="1490457600" value="18781">2017-03-26</option><option data-time="1489766400" value="18336">2017-03-18</option><option data-time="1488988800" value="17717">2017-03-09</option><option data-time="1488470400" value="17377">2017-03-03</option><option data-time="1487779200" value="16819">2017-02-23</option><option data-time="1487088000" value="16331">2017-02-15</option><option data-time="1486656000" value="16044">2017-02-10</option><option data-time="1485100800" value="15435">2017-01-23</option><option data-time="1484841600" value="15111">2017-01-20</option><option data-time="1484496000" value="14727">2017-01-16</option><option data-time="1483632000" value="14252">2017-01-06</option><option data-time="1483027200" value="13861">2016-12-30</option><option data-time="1482336000" value="13298">2016-12-22</option><option data-time="1481644800" value="12980">2016-12-14</option><option data-time="1481299200" value="12673">2016-12-10</option><option data-time="1480608000" value="12245">2016-12-02</option><option data-time="1480262400" value="11952">2016-11-28</option><option data-time="1479398400" value="11470">2016-11-18</option><option data-time="1478880000" value="10915">2016-11-12</option><option data-time="1478361600" value="10552">2016-11-06</option><option data-time="1478102400" value="10497">2016-11-03</option><option data-time="1477670400" value="10074">2016-10-29</option><option data-time="1476374400" value="9419">2016-10-14</option><option data-time="1475164800" value="8880">2016-09-30</option><option data-time="1474732800" value="8501">2016-09-25</option><option data-time="1474300800" value="8265">2016-09-20</option><option data-time="1473523200" value="7699">2016-09-11</option><option data-time="1472745600" value="7346">2016-09-02</option><option data-time="1472140800" value="6906">2016-08-26</option><option data-time="1471190400" value="6211">2016-08-15</option><option data-time="1470499200" value="910">2016-08-07</option><option data-time="1469635200" value="909">2016-07-28</option><option data-time="1469030400" value="908">2016-07-21</option><option data-time="1468684800" value="907">2016-07-17</option><option data-time="1467907200" value="906">2016-07-08</option><option data-time="1467216000" value="905">2016-06-30</option><option data-time="1466611200" value="904">2016-06-23</option><option data-time="1466179200" value="903">2016-06-18</option><option data-time="1465747200" value="902">2016-06-13</option><option data-time="1464883200" value="901">2016-06-03</option></select>
+    </div>
+
+</div>
+
+<script src="tour.js"></script>
+<link rel="stylesheet" href="2018-03-05%20%202018-03-12_data/panorama_comparison.css">
+<div style=" clear: both; height: 95.5%; overflow: hidden; width: 100%;">
+    <div id="pano" style="float: left; height: 100%; width: 50%;">
+        <noscript>
+            <table style="height: 100%; width: 100%;">
+                <tr style="vertical-align: middle;">
+                    <td>
+                        <div style="text-align: center;"> ERROR:<br/>
+                            <br/>Javascript not activated<br/>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </noscript>
+    <div id="krpanoSWFObject" style="position: relative; overflow: hidden; line-height: normal; font-weight: normal; font-style: normal; outline: 0px none currentcolor; background: rgb(0, 0, 0) none repeat scroll 0% 0%; width: 100%; height: 100%;" tabindex="-1"><div style="position: absolute; left: 0px; top: 0px; width: 952px; height: 885px; overflow: hidden; -moz-user-select: none; touch-action: none; cursor: default;"><div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: none;"><canvas style="position: absolute; left: 0px; top: 0px; width: 952px; height: 885px;" width="952" height="885"></canvas></div><div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; overflow: hidden; -moz-user-select: none;"></div></div><div style="position: absolute; left: 0px; bottom: 0px; width: 100%; height: 156px; overflow: hidden; display: none; transform: translateZ(2000000000000px); z-index: 999999999;"><div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; overflow: hidden; opacity: 0.67; background-color: rgb(0, 0, 0); box-shadow: rgb(255, 255, 255) 0px 0px 8px; margin-top: 8px;"></div><pre style="font-family: Courier\ New; font-size: 11px; position: absolute; left: 5px; top: 0px; padding: 0px 16px 0px 0px; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; border: 0px none; margin-top: 10px; width: 100%; height: 146px; overflow: auto; display: block; text-align: left; white-space: pre-line; -moz-text-size-adjust: none; color: rgb(255, 255, 255); cursor: text;">INFO: krpano 1.19-pr4 (build 2016-04-07)
+INFO: HTML5/Desktop - Firefox 59.0 - WebGL
+INFO: Registered to: 振杰 卢</pre><div style="position: absolute; right: 0px; top: 10px; padding: 0px 4px; height: 30px; -moz-user-select: none; cursor: pointer; font-family: Courier\ New; font-size: 10px; color: rgb(255, 255, 255);">CLOSE</div><div style="position: absolute; right: 0px; bottom: 0px; padding: 0px 4px 4px; height: 12px; -moz-user-select: none; cursor: pointer; font-family: Courier\ New; font-size: 10px; color: rgb(15, 255, 0); display: none;">LAYERS</div><div style="position: absolute; right: 0px; bottom: 18px; padding: 4px 4px 0px; height: 12px; -moz-user-select: none; cursor: pointer; font-family: Courier\ New; font-size: 10px; color: rgb(15, 255, 0); display: none;">HOTSPOTS</div></div></div></div>
+    <div id="empty" style="float: left; height: 100%; width: 50%;  display: none; overflow: hidden;background:url('/Public/Panorama/error/empty.jpg') #FEFEFE no-repeat center top;"></div>
+    <div id="pano2" style="float: left; height: 100%; width: 50%; ">
+        <noscript>
+            <table style="height: 100%; width: 100%;">
+                <tr style="vertical-align: middle;">
+                    <td>
+                        <div style="text-align: center;"> ERROR:<br/>
+                            <br/>Javascript not activated<br/>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </noscript>
+        <script>
+            embedpano({
+                swf: "/Public/Panorama/swf/panorama.swf",
+                xml: "/Public/Panorama/vs/tour.xml?date=" + new Date().getTime(),
+                target: "pano",
+                html5: "prefer",
+                passQueryParameters: true
+            });
+            embedpano({
+                swf: "/Public/Panorama/swf/panorama.swf",
+                xml: "/Public/Panorama/vs/tour2.xml?date=" + new Date().getTime(),
+                target: "pano2",
+                html5: "prefer",
+                passQueryParameters: true
+            });
+        </script><div id="krpanoSWFObject2" style="position: relative; overflow: hidden; line-height: normal; font-weight: normal; font-style: normal; outline: 0px none currentcolor; background: rgb(0, 0, 0) none repeat scroll 0% 0%; width: 100%; height: 100%;" tabindex="-1"><div style="position: absolute; left: 0px; top: 0px; width: 952px; height: 885px; overflow: hidden; -moz-user-select: none; touch-action: none; cursor: default;"><div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; overflow: hidden; pointer-events: none;"><canvas style="position: absolute; left: 0px; top: 0px; width: 952px; height: 885px;" width="952" height="885"></canvas></div><div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; overflow: hidden; -moz-user-select: none;"></div></div><div style="position: absolute; left: 0px; bottom: 0px; width: 100%; height: 156px; overflow: hidden; display: none; transform: translateZ(2000000000000px); z-index: 999999999;"><div style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; overflow: hidden; opacity: 0.67; background-color: rgb(0, 0, 0); box-shadow: rgb(255, 255, 255) 0px 0px 8px; margin-top: 8px;"></div><pre style="font-family: Courier\ New; font-size: 11px; position: absolute; left: 5px; top: 0px; padding: 0px 16px 0px 0px; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; border: 0px none; margin-top: 10px; width: 100%; height: 146px; overflow: auto; display: block; text-align: left; white-space: pre-line; -moz-text-size-adjust: none; color: rgb(255, 255, 255); cursor: text;">INFO: krpano 1.19-pr4 (build 2016-04-07)
+INFO: HTML5/Desktop - Firefox 59.0 - WebGL
+INFO: Registered to: 振杰 卢</pre><div style="position: absolute; right: 0px; top: 10px; padding: 0px 4px; height: 30px; -moz-user-select: none; cursor: pointer; font-family: Courier\ New; font-size: 10px; color: rgb(255, 255, 255);">CLOSE</div><div style="position: absolute; right: 0px; bottom: 0px; padding: 0px 4px 4px; height: 12px; -moz-user-select: none; cursor: pointer; font-family: Courier\ New; font-size: 10px; color: rgb(15, 255, 0); display: none;">LAYERS</div><div style="position: absolute; right: 0px; bottom: 18px; padding: 4px 4px 0px; height: 12px; -moz-user-select: none; cursor: pointer; font-family: Courier\ New; font-size: 10px; color: rgb(15, 255, 0); display: none;">HOTSPOTS</div></div></div>
+    </div>
+</div>
+
+
+<canvas id="canvas" width="110" height="110" style="display: none"></canvas>
+<script src="jquery-1.js"></script>
+<script type="text/javascript" src="layer.js"></script>
+<script src="template.js"></script>
+<!--右侧对比日期的模板，用于重置操作-->
+<script id="right_data_template" type="text/html">
+    <option value="0">--请选择时间--</option>
+    <option data-time="1520784000"
+                value="34996">2018-03-12</option><option data-time="1520179200"
+        selected        value="34673">2018-03-05</option><option data-time="1519574400"
+                value="34399">2018-02-26</option><option data-time="1519401600"
+                value="34322">2018-02-24</option><option data-time="1518105600"
+                value="33896">2018-02-09</option><option data-time="1517760000"
+                value="33645">2018-02-05</option><option data-time="1517241600"
+                value="33381">2018-01-30</option><option data-time="1516550400"
+                value="33063">2018-01-22</option><option data-time="1515945600"
+                value="32758">2018-01-15</option><option data-time="1515513600"
+                value="32484">2018-01-10</option><option data-time="1514908800"
+                value="32251">2018-01-03</option><option data-time="1514131200"
+                value="31976">2017-12-25</option><option data-time="1513526400"
+                value="31798">2017-12-18</option><option data-time="1513267200"
+                value="31752">2017-12-15</option><option data-time="1512921600"
+                value="31530">2017-12-11</option><option data-time="1512576000"
+                value="31428">2017-12-07</option><option data-time="1512316800"
+                value="31207">2017-12-04</option><option data-time="1511971200"
+                value="31121">2017-11-30</option><option data-time="1511712000"
+                value="30978">2017-11-27</option><option data-time="1511366400"
+                value="30861">2017-11-23</option><option data-time="1511107200"
+                value="30734">2017-11-20</option><option data-time="1510761600"
+                value="30560">2017-11-16</option><option data-time="1510588800"
+                value="30504">2017-11-14</option><option data-time="1509897600"
+                value="30289">2017-11-06</option><option data-time="1509465600"
+                value="30207">2017-11-01</option><option data-time="1508860800"
+                value="29920">2017-10-25</option><option data-time="1508169600"
+                value="29680">2017-10-17</option><option data-time="1507478400"
+                value="29490">2017-10-09</option><option data-time="1506960000"
+                value="29425">2017-10-03</option><option data-time="1506614400"
+                value="29337">2017-09-29</option><option data-time="1506441600"
+                value="29217">2017-09-27</option><option data-time="1506009600"
+                value="29079">2017-09-22</option><option data-time="1505059200"
+                value="28692">2017-09-11</option><option data-time="1504627200"
+                value="28539">2017-09-06</option><option data-time="1503936000"
+                value="28176">2017-08-29</option><option data-time="1503331200"
+                value="27902">2017-08-22</option><option data-time="1502640000"
+                value="27417">2017-08-14</option><option data-time="1502121600"
+                value="27052">2017-08-08</option><option data-time="1501516800"
+                value="26729">2017-08-01</option><option data-time="1500912000"
+                value="26304">2017-07-25</option><option data-time="1500393600"
+                value="25835">2017-07-19</option><option data-time="1499616000"
+                value="25414">2017-07-10</option><option data-time="1499356800"
+                value="25218">2017-07-07</option><option data-time="1499184000"
+                value="24955">2017-07-05</option><option data-time="1498147200"
+                value="24581">2017-06-23</option><option data-time="1496764800"
+                value="23779">2017-06-07</option><option data-time="1496332800"
+                value="23394">2017-06-02</option><option data-time="1495468800"
+                value="22738">2017-05-23</option><option data-time="1495123200"
+                value="22542">2017-05-19</option><option data-time="1494345600"
+                value="21933">2017-05-10</option><option data-time="1493913600"
+                value="21489">2017-05-05</option><option data-time="1493136000"
+                value="20978">2017-04-26</option><option data-time="1492963200"
+                value="20800">2017-04-24</option><option data-time="1492012800"
+                value="20215">2017-04-13</option><option data-time="1491667200"
+                value="19806">2017-04-09</option><option data-time="1490976000"
+                value="19327">2017-04-01</option><option data-time="1490457600"
+                value="18781">2017-03-26</option><option data-time="1489766400"
+                value="18336">2017-03-18</option><option data-time="1488988800"
+                value="17717">2017-03-09</option><option data-time="1488470400"
+                value="17377">2017-03-03</option><option data-time="1487779200"
+                value="16819">2017-02-23</option><option data-time="1487088000"
+                value="16331">2017-02-15</option><option data-time="1486656000"
+                value="16044">2017-02-10</option><option data-time="1485100800"
+                value="15435">2017-01-23</option><option data-time="1484841600"
+                value="15111">2017-01-20</option><option data-time="1484496000"
+                value="14727">2017-01-16</option><option data-time="1483632000"
+                value="14252">2017-01-06</option><option data-time="1483027200"
+                value="13861">2016-12-30</option><option data-time="1482336000"
+                value="13298">2016-12-22</option><option data-time="1481644800"
+                value="12980">2016-12-14</option><option data-time="1481299200"
+                value="12673">2016-12-10</option><option data-time="1480608000"
+                value="12245">2016-12-02</option><option data-time="1480262400"
+                value="11952">2016-11-28</option><option data-time="1479398400"
+                value="11470">2016-11-18</option><option data-time="1478880000"
+                value="10915">2016-11-12</option><option data-time="1478361600"
+                value="10552">2016-11-06</option><option data-time="1478102400"
+                value="10497">2016-11-03</option><option data-time="1477670400"
+                value="10074">2016-10-29</option><option data-time="1476374400"
+                value="9419">2016-10-14</option><option data-time="1475164800"
+                value="8880">2016-09-30</option><option data-time="1474732800"
+                value="8501">2016-09-25</option><option data-time="1474300800"
+                value="8265">2016-09-20</option><option data-time="1473523200"
+                value="7699">2016-09-11</option><option data-time="1472745600"
+                value="7346">2016-09-02</option><option data-time="1472140800"
+                value="6906">2016-08-26</option><option data-time="1471190400"
+                value="6211">2016-08-15</option><option data-time="1470499200"
+                value="910">2016-08-07</option><option data-time="1469635200"
+                value="909">2016-07-28</option><option data-time="1469030400"
+                value="908">2016-07-21</option><option data-time="1468684800"
+                value="907">2016-07-17</option><option data-time="1467907200"
+                value="906">2016-07-08</option><option data-time="1467216000"
+                value="905">2016-06-30</option><option data-time="1466611200"
+                value="904">2016-06-23</option><option data-time="1466179200"
+                value="903">2016-06-18</option><option data-time="1465747200"
+                value="902">2016-06-13</option><option data-time="1464883200"
+                value="901">2016-06-03</option></script>
+
+<script type="text/javascript">
+//    document.domain = "h5.skylartech.cn";
+    var krpano = document.getElementById("krpanoSWFObject");
+    var krpano2 = document.getElementById("krpanoSWFObject2");
+    var pending = false;
+    var lastH = 0;
+    var lastV = 0;
+    var panoRightH = 0;
+    var panoRightV = 0;
+
+    //右侧日期json
+    var right_date_list_json = {"34996":{"id":"34996","date":"2018-03-12","pid":"628","timetmp":1520784000,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2018-00-12","alias":"LG-dec"},"34673":{"id":"34673","date":"2018-03-05","pid":"628","timetmp":1520179200,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2018-00-05","alias":"LG-dec"},"34399":{"id":"34399","date":"2018-02-26","pid":"628","timetmp":1519574400,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2018-00-26","alias":"LG-dec"},"34322":{"id":"34322","date":"2018-02-24","pid":"628","timetmp":1519401600,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2018-00-24","alias":"LG-dec"},"33896":{"id":"33896","date":"2018-02-09","pid":"628","timetmp":1518105600,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2018-00-09","alias":"LG-dec"},"33645":{"id":"33645","date":"2018-02-05","pid":"628","timetmp":1517760000,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2018-00-05","alias":"LG-dec"},"33381":{"id":"33381","date":"2018-01-30","pid":"628","timetmp":1517241600,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2018-00-30","alias":"LG-dec"},"33063":{"id":"33063","date":"2018-01-22","pid":"628","timetmp":1516550400,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2018-00-22","alias":"LG-dec"},"32758":{"id":"32758","date":"2018-01-15","pid":"628","timetmp":1515945600,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2018-00-15","alias":"LG-dec"},"32484":{"id":"32484","date":"2018-01-10","pid":"628","timetmp":1515513600,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2018-00-10","alias":"LG-dec"},"32251":{"id":"32251","date":"2018-01-03","pid":"628","timetmp":1514908800,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2018-00-03","alias":"LG-dec"},"31976":{"id":"31976","date":"2017-12-25","pid":"628","timetmp":1514131200,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2017-01-25","alias":"LG-dec"},"31798":{"id":"31798","date":"2017-12-18","pid":"628","timetmp":1513526400,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2017-01-18","alias":"LG-dec"},"31752":{"id":"31752","date":"2017-12-15","pid":"628","timetmp":1513267200,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2017-01-15","alias":"LG-dec"},"31530":{"id":"31530","date":"2017-12-11","pid":"628","timetmp":1512921600,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2017-01-11","alias":"LG-dec"},"31428":{"id":"31428","date":"2017-12-07","pid":"628","timetmp":1512576000,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2017-01-07","alias":"LG-dec"},"31207":{"id":"31207","date":"2017-12-04","pid":"628","timetmp":1512316800,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-01-04","alias":"LG-dec"},"31121":{"id":"31121","date":"2017-11-30","pid":"628","timetmp":1511971200,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2017-01-30","alias":"LG-dec"},"30978":{"id":"30978","date":"2017-11-27","pid":"628","timetmp":1511712000,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2017-01-27","alias":"LG-dec"},"30861":{"id":"30861","date":"2017-11-23","pid":"628","timetmp":1511366400,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2017-01-23","alias":"LG-dec"},"30734":{"id":"30734","date":"2017-11-20","pid":"628","timetmp":1511107200,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2017-01-20","alias":"LG-dec"},"30560":{"id":"30560","date":"2017-11-16","pid":"628","timetmp":1510761600,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-01-16","alias":"LG-dec"},"30504":{"id":"30504","date":"2017-11-14","pid":"628","timetmp":1510588800,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2017-01-14","alias":"LG-dec"},"30289":{"id":"30289","date":"2017-11-06","pid":"628","timetmp":1509897600,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2017-01-06","alias":"LG-dec"},"30207":{"id":"30207","date":"2017-11-01","pid":"628","timetmp":1509465600,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2017-01-01","alias":"LG-dec"},"29920":{"id":"29920","date":"2017-10-25","pid":"628","timetmp":1508860800,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2017-01-05","alias":"LG-dec"},"29680":{"id":"29680","date":"2017-10-17","pid":"628","timetmp":1508169600,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2017-01-07","alias":"LG-dec"},"29490":{"id":"29490","date":"2017-10-09","pid":"628","timetmp":1507478400,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2017-01-09","alias":"LG-dec"},"29425":{"id":"29425","date":"2017-10-03","pid":"628","timetmp":1506960000,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-01-03","alias":"LG-dec"},"29337":{"id":"29337","date":"2017-09-29","pid":"628","timetmp":1506614400,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-29","alias":"LG-dec"},"29217":{"id":"29217","date":"2017-09-27","pid":"628","timetmp":1506441600,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-27","alias":"LG-dec"},"29079":{"id":"29079","date":"2017-09-22","pid":"628","timetmp":1506009600,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-22","alias":"LG-dec"},"28692":{"id":"28692","date":"2017-09-11","pid":"628","timetmp":1505059200,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-11","alias":"LG-dec"},"28539":{"id":"28539","date":"2017-09-06","pid":"628","timetmp":1504627200,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-06","alias":"LG-dec"},"28176":{"id":"28176","date":"2017-08-29","pid":"628","timetmp":1503936000,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-29","alias":"LG-dec"},"27902":{"id":"27902","date":"2017-08-22","pid":"628","timetmp":1503331200,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-22","alias":"LG-dec"},"27417":{"id":"27417","date":"2017-08-14","pid":"628","timetmp":1502640000,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-14","alias":"LG-dec"},"27052":{"id":"27052","date":"2017-08-08","pid":"628","timetmp":1502121600,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-08","alias":"LG-dec"},"26729":{"id":"26729","date":"2017-08-01","pid":"628","timetmp":1501516800,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-01","alias":"LG-dec"},"26304":{"id":"26304","date":"2017-07-25","pid":"628","timetmp":1500912000,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-25","alias":"LG-dec"},"25835":{"id":"25835","date":"2017-07-19","pid":"628","timetmp":1500393600,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-19","alias":"LG-dec"},"25414":{"id":"25414","date":"2017-07-10","pid":"628","timetmp":1499616000,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-10","alias":"LG-dec"},"25218":{"id":"25218","date":"2017-07-07","pid":"628","timetmp":1499356800,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-07","alias":"LG-dec"},"24955":{"id":"24955","date":"2017-07-05","pid":"628","timetmp":1499184000,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-05","alias":"LG-dec"},"24581":{"id":"24581","date":"2017-06-23","pid":"628","timetmp":1498147200,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-23","alias":"LG-dec"},"23779":{"id":"23779","date":"2017-06-07","pid":"628","timetmp":1496764800,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-07","alias":"LG-dec"},"23394":{"id":"23394","date":"2017-06-02","pid":"628","timetmp":1496332800,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-02","alias":"LG-dec"},"22738":{"id":"22738","date":"2017-05-23","pid":"628","timetmp":1495468800,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-23","alias":"LG-dec"},"22542":{"id":"22542","date":"2017-05-19","pid":"628","timetmp":1495123200,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-19","alias":"LG-dec"},"21933":{"id":"21933","date":"2017-05-10","pid":"628","timetmp":1494345600,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-10","alias":"LG-dec"},"21489":{"id":"21489","date":"2017-05-05","pid":"628","timetmp":1493913600,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-05","alias":"LG-dec"},"20978":{"id":"20978","date":"2017-04-26","pid":"628","timetmp":1493136000,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-26","alias":"LG-dec"},"20800":{"id":"20800","date":"2017-04-24","pid":"628","timetmp":1492963200,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-24","alias":"LG-dec"},"20215":{"id":"20215","date":"2017-04-13","pid":"628","timetmp":1492012800,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-13","alias":"LG-dec"},"19806":{"id":"19806","date":"2017-04-09","pid":"628","timetmp":1491667200,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-09","alias":"LG-dec"},"19327":{"id":"19327","date":"2017-04-01","pid":"628","timetmp":1490976000,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-01","alias":"LG-dec"},"18781":{"id":"18781","date":"2017-03-26","pid":"628","timetmp":1490457600,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-26","alias":"LG-dec"},"18336":{"id":"18336","date":"2017-03-18","pid":"628","timetmp":1489766400,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-18","alias":"LG-dec"},"17717":{"id":"17717","date":"2017-03-09","pid":"628","timetmp":1488988800,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-09","alias":"LG-dec"},"17377":{"id":"17377","date":"2017-03-03","pid":"628","timetmp":1488470400,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-03","alias":"LG-dec"},"16819":{"id":"16819","date":"2017-02-23","pid":"628","timetmp":1487779200,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-23","alias":"LG-dec"},"16331":{"id":"16331","date":"2017-02-15","pid":"628","timetmp":1487088000,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-15","alias":"LG-dec"},"16044":{"id":"16044","date":"2017-02-10","pid":"628","timetmp":1486656000,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-10","alias":"LG-dec"},"15435":{"id":"15435","date":"2017-01-23","pid":"628","timetmp":1485100800,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-23","alias":"LG-dec"},"15111":{"id":"15111","date":"2017-01-20","pid":"628","timetmp":1484841600,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-20","alias":"LG-dec"},"14727":{"id":"14727","date":"2017-01-16","pid":"628","timetmp":1484496000,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-16","alias":"LG-dec"},"14252":{"id":"14252","date":"2017-01-06","pid":"628","timetmp":1483632000,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2017-00-06","alias":"LG-dec"},"13861":{"id":"13861","date":"2016-12-30","pid":"628","timetmp":1483027200,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2016-01-30","alias":"LG-dec"},"13298":{"id":"13298","date":"2016-12-22","pid":"628","timetmp":1482336000,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2016-01-22","alias":"LG-dec"},"12980":{"id":"12980","date":"2016-12-14","pid":"628","timetmp":1481644800,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2016-01-14","alias":"LG-dec"},"12673":{"id":"12673","date":"2016-12-10","pid":"628","timetmp":1481299200,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2016-01-10","alias":"LG-dec"},"12245":{"id":"12245","date":"2016-12-02","pid":"628","timetmp":1480608000,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2016-01-02","alias":"LG-dec"},"11952":{"id":"11952","date":"2016-11-28","pid":"628","timetmp":1480262400,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2016-01-28","alias":"LG-dec"},"11470":{"id":"11470","date":"2016-11-18","pid":"628","timetmp":1479398400,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2016-01-18","alias":"LG-dec"},"10915":{"id":"10915","date":"2016-11-12","pid":"628","timetmp":1478880000,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2016-01-12","alias":"LG-dec"},"10552":{"id":"10552","date":"2016-11-06","pid":"628","timetmp":1478361600,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2016-01-06","alias":"LG-dec"},"10497":{"id":"10497","date":"2016-11-03","pid":"628","timetmp":1478102400,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2016-01-03","alias":"LG-dec"},"10074":{"id":"10074","date":"2016-10-29","pid":"628","timetmp":1477670400,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2016-01-09","alias":"LG-dec"},"9419":{"id":"9419","date":"2016-10-14","pid":"628","timetmp":1476374400,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2016-01-04","alias":"LG-dec"},"8880":{"id":"8880","date":"2016-09-30","pid":"628","timetmp":1475164800,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2016-00-30","alias":"LG-dec"},"8501":{"id":"8501","date":"2016-09-25","pid":"628","timetmp":1474732800,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2016-00-25","alias":"LG-dec"},"8265":{"id":"8265","date":"2016-09-20","pid":"628","timetmp":1474300800,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2016-00-20","alias":"LG-dec"},"7699":{"id":"7699","date":"2016-09-11","pid":"628","timetmp":1473523200,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2016-00-11","alias":"LG-dec"},"7346":{"id":"7346","date":"2016-09-02","pid":"628","timetmp":1472745600,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2016-00-02","alias":"LG-dec"},"6906":{"id":"6906","date":"2016-08-26","pid":"628","timetmp":1472140800,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2016-00-26","alias":"LG-dec"},"6211":{"id":"6211","date":"2016-08-15","pid":"628","timetmp":1471190400,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2016-00-15","alias":"LG-dec"},"910":{"id":"910","date":"2016-08-07","pid":"628","timetmp":1470499200,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2016-00-07","alias":"LG-dec"},"909":{"id":"909","date":"2016-07-28","pid":"628","timetmp":1469635200,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2016-00-28","alias":"LG-dec"},"908":{"id":"908","date":"2016-07-21","pid":"628","timetmp":1469030400,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2016-00-21","alias":"LG-dec"},"907":{"id":"907","date":"2016-07-17","pid":"628","timetmp":1468684800,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2016-00-17","alias":"LG-dec"},"906":{"id":"906","date":"2016-07-08","pid":"628","timetmp":1467907200,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2016-00-08","alias":"LG-dec"},"905":{"id":"905","date":"2016-06-30","pid":"628","timetmp":1467216000,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2016-00-30","alias":"LG-dec"},"904":{"id":"904","date":"2016-06-23","pid":"628","timetmp":1466611200,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2016-00-23","alias":"LG-dec"},"903":{"id":"903","date":"2016-06-18","pid":"628","timetmp":1466179200,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2016-00-18","alias":"LG-dec"},"902":{"id":"902","date":"2016-06-13","pid":"628","timetmp":1465747200,"is_vs":0,"title":"\u4e1c\u4e8c\u6751","time":"2016-00-13","alias":"LG-dec"},"901":{"id":"901","date":"2016-06-03","pid":"628","timetmp":1464883200,"is_vs":1,"title":"\u4e1c\u4e8c\u6751","time":"2016-00-03","alias":"LG-dec"}};
+
+    //最后一次请求的json的左侧对比数据
+    var last_left_json = [{"name":"hotspot_20180314152646","x":"-7.350220564847973","y":"42.50679484890873","scale":"0.3","zoom":"true","url":"\/web_up_file\/hot_spic\/hotspot_20180314152646.png","position":"0"},{"name":"hotspot_20180314163350","x":"50.368063647202405","y":"49.26341730906469","scale":"0.3","zoom":"true","url":"\/web_up_file\/hot_spic\/hotspot_20180314163350.png","position":"0"}];
+
+    var last_right_json = [{"name":"hotspot_20180314152649","x":"-8.105817455083297","y":"43.070693010621184","scale":"0.3","zoom":"true","url":"\/web_up_file\/hot_spic\/hotspot_20180314152649.png","position":"1"},{"name":"hotspot_20180314163358","x":"49.12783988355716","y":"49.0060287606585","scale":"0.3","zoom":"true","url":"\/web_up_file\/hot_spic\/hotspot_20180314163358.png","position":"1"}];  //上一次右侧的热点
+
+    //用于左侧的显示隐藏热点数据
+    var hot_left_json_list = [{"name":"hotspot_20180314152646","x":"-7.350220564847973","y":"42.50679484890873","scale":"0.3","zoom":"true","url":"\/web_up_file\/hot_spic\/hotspot_20180314152646.png","position":"0"},{"name":"hotspot_20180314163350","x":"50.368063647202405","y":"49.26341730906469","scale":"0.3","zoom":"true","url":"\/web_up_file\/hot_spic\/hotspot_20180314163350.png","position":"0"}];
+
+    //用于右侧的显示隐藏热点数据
+    var hot_right_json_list = [{"name":"hotspot_20180314152649","x":"-8.105817455083297","y":"43.070693010621184","scale":"0.3","zoom":"true","url":"\/web_up_file\/hot_spic\/hotspot_20180314152649.png","position":"1"},{"name":"hotspot_20180314163358","x":"49.12783988355716","y":"49.0060287606585","scale":"0.3","zoom":"true","url":"\/web_up_file\/hot_spic\/hotspot_20180314163358.png","position":"1"}];
+
+    var last_right_id = null; //右侧下拉菜单，切换前的ID
+
+    var about_vs_date_list = {"34996":["34673"],"34673":["34399","34996"],"34399":["34673","33381"],"34322":["33896"],"33896":["33645","34322"],"33645":["33381","33896"],"33381":["33063","33645","34399"],"33063":["32758","33381"],"32758":["32484","33063"],"32484":["32758"],"32251":["31976"],"31976":["32251","29337"],"31798":["31752"],"31752":["31798","31530"],"31530":["31428","31752"],"31428":["31530"],"31121":["30978"],"30978":["30861","31121"],"30861":["30734","30978"],"30734":["30861"],"30504":["30289"],"30289":["30207","30504"],"30207":["29920","30289"],"29920":["29680","30207"],"29680":["29490","29920"],"29490":["29680"],"29337":["29079","31976"],"29079":["29337"],"26304":["25835"],"25835":["25414","26304"],"25414":["25835"],"21933":["13861"],"13861":["21933"],"10074":["9419"],"9419":["10074"],"8880":["901"],"910":["909"],"909":["910"],"901":["8880"]}; //和左侧有过对比记录的 集合
+
+</script>
+
+<script type="text/javascript">
+    /**
+     * 对比规则： 右侧日期不得超过左侧日期
+     */
+    function vsRule($left_time) {
+        $("#date_select_right option").each(function (index, vo) {
+            var v = $(vo);
+            var $right_time = v.attr("data-time");
+            if ((typeof ($right_time) != 'undefined') && (parseInt($right_time) > parseInt($left_time))) {
+                v.attr("disabled", true);
+            }
+        })
+    }
+    /**
+     * 高亮对比
+     * @param list
+     */
+    function highlight_vs(list) {
+        //先重置模板，再去高亮，防止重复
+        $("#date_select_right").html("").append(template("right_data_template"));
+
+        console.log('list=>');
+        console.log(list);
+
+        $.each(list, function (index, vo) {
+            var $obj = $("#date_select_right option[value='" + vo + "']");
+            if (typeof ($obj) != 'undefined' && typeof $obj.val() != 'undefined') {
+
+                var txt = right_date_list_json[$obj.val()]['date']
+                $obj.text(txt + "★");
+            }
+        });
+
+        //上一个选中的option
+        if (last_right_id != null) {
+            console.log('last_right_id=' + last_right_id);
+            $("#date_select_right option[value='" + last_right_id + "']").attr("selected", "selected");
+        }
+    }
+
+
+    // 以左侧为基准。 右侧显示标记星星
+    function highlight_right_date(left_id) {
+
+        if (left_id != 0) {
+
+            //先清空
+            $("#date_select_right").html("").append(template("right_data_template"));
+
+            $temp = about_vs_date_list[left_id];
+
+            if ($temp) {
+                //再加星星
+                $.each($temp, function (index, value) {
+
+                    t = $("#date_select_right option[value='" + value + "']");
+                    t.text(t.text() + '★');
+                });
+            }
+        }
+    }
+
+
+    var Rand = Math.random();
+
+    /**
+     * 求数组最小值
+     */
+    Array.prototype.min = function () {
+        var min = this[0];
+        var len = this.length;
+        for (var i = 1; i < len; i++) {
+            if (this[i] < min) {
+                min = this[i];
+            }
+        }
+        return min;
+    }
+
+    //最大值
+    Array.prototype.max = function () {
+        var max = this[0];
+        var len = this.length;
+        for (var i = 1; i < len; i++) {
+            if (this[i] > max) {
+                max = this[i];
+            }
+        }
+        return max;
+    }
+
+    $(function () {
+        var time_span = $("#time_span");
+        vsRule($("#date_select_left").find("option:selected").attr("data-time"));
+        var $place_id = "628";
+        var xml = ['/Public/Panorama/vs/tour.xml', '/Public/Panorama/vs/tour2.xml'];
+        var obj = [krpano, krpano2];
+        highlight_vs(["34673"]); //加载时,就显示高亮效果
+
+        highlight_right_date($("#date_select_left").val());
+
+        //左侧场景切换
+        $("select.date_select").change(function () {
+
+            var left_id = $("#date_select_left").val();
+            var right_id = $("#date_select_right").find("option:selected").val();
+
+            highlight_right_date(left_id);
+
+
+            if (left_id == 0 || right_id == 0) {
+                return;
+            }
+
+            last_right_id = right_id;
+            var _this = $(this);
+            var index = _this.attr("data-id");
+
+            // $option = _this.find("option:selected");
+
+            var object_id = _this.attr("id");  //获取当前
+            var position = (object_id == 'date_select_left') ? 1 : 0;
+
+
+            if (position == 1) {
+                $option = $("#date_select_left option[value='" + left_id + "']");
+            } else {
+                $option = $("#date_select_right option[value='" + right_id + "']");
+            }
+
+            $flag_text = $option.text();
+
+            var data_time = parseInt($option.attr("data-time"));
+
+            _this.find("option:selected").text("正在加载全景...");
+
+            time_span.text("").text("对比时间:" + right_date_list_json[left_id]['date'] + ":" + right_date_list_json[right_id]['date']);
+
+
+            //左侧切换
+            if (position == 1) {
+
+                //没有和左侧相关的匹配，那么就匹配与当前 左侧日期，最相近的一期
+                v = _this.find("option:selected").next('option').val();
+                $("#date_select_right option[value='" + v + "']").attr("selected", "selected");
+
+                //如果当前已经是最后一期
+                if (!v) {
+                    layer.msg('左侧日期已经是最后一期，请重新选择', {time: 500000});
+                    _this.find("option:selected").text($flag_text);
+                    return;
+                }
+
+                last_right_id = v;
+
+
+                //有匹配到， 但右侧的日期不能大于左侧的日期 .获取匹配到日期最小的那个
+                if (about_vs_date_list[left_id]) {
+
+                    // value = about_vs_date_list[left_id].min();
+
+                    var $temp_arr = [];
+                    $.each(about_vs_date_list[left_id], function (i, v) {
+
+                        s = parseInt($("#date_select_right option[value='" + v + "']").attr("data-time"));
+                        if (data_time > s) {
+                            $temp_arr.push(v);
+                        }
+                    });
+                    value = $temp_arr.max();
+
+                    last_right_id = value;
+
+                    if(!last_right_id){             //改的2017/08/04
+                        last_right_id = v;
+                    }
+
+
+                    /* var right_time = $("#date_select_right option[value='" + value + "']").attr("data-time");
+
+                     if (parseInt(data_time) > parseInt(right_time)) {
+
+                     last_right_id = value;
+                     }*/
+                }
+            }
+
+            /**
+             * 规则：
+             *    1.如果是左侧日期切换，则右侧也随之切换。
+             *      切换规则：（以左侧日期为基准）
+             *        1.右侧优先显示： 对比的最近一期
+             *        2.如果没有对比过，则显示小于左侧日期的，最近一期
+             *        3.如果左侧选择的是最后一期。则右边提示 无相关场景
+             */
+            $.post('/Contrast/async_load_xml/place_id/' + $place_id + '/a_id/' + left_id + '/b_id/' + last_right_id + '/position/' + position, '', function (json) {
+                //   console.info(JSON.stringify(json));return;
+                _this.find("option:selected").text($flag_text);
+
+                console.log($flag_text);
+
+                if (json.data.empty) {  //右侧没有场景,则只加载左侧
+                    obj[0].call("loadpano('" + xml[0] + '?t=' + Math.random() + "',null,IGNOREKEEP,null);");
+
+                }
+                //如果是左侧场景切换，则同时切换
+                if (position == 1) {
+                    obj[0].call("loadpano('" + xml[0] + '?t=' + Math.random() + "',null,IGNOREKEEP,null);");
+                    obj[1].call("loadpano('" + xml[1] + '?t=' + Math.random() + "',null,IGNOREKEEP,null);");
+                    //对比的时间可能有偏差，则修改时间
+                    //time_span.text("").text("对比时间:" + right_date_list_json[json.data.id_list.left]['date'] + ":" + right_date_list_json[json.data.id_list.right]['date']);
+
+                    time_span.text("").text("对比时间:" + right_date_list_json[left_id]['date'] + ":" + right_date_list_json[last_right_id]['date']);       //改的2017/08/04
+
+                } else {
+                    obj[index].call("loadpano('" + xml[index] + '?t=' + Math.random() + "',null,IGNOREKEEP,null);");   //重新加载全景
+                }
+                if (typeof(json.data) != 'undefined' && (json.data)) {
+                    //清空左侧所有热点
+                    if (last_left_json) {
+                        $.each(last_left_json, function (index, vo) {
+                            krpano.call("removehotspottest('" + vo.name + "');");
+                        });
+                    }
+                    if (typeof(json.data.hot.left) != 'undefined' && (json.data.hot.left != '')) {
+                        last_left_json = json.data.hot.left;
+                        hot_left_json_list = json.data.hot.left;
+                    } else {
+                        last_left_json = [];
+                        hot_left_json_list = [];
+                    }
+
+                    //清空右侧所有热点,并记录当前热点
+                    if (last_right_json) {
+                        $.each(last_right_json, function (index, vo) {
+                            krpano2.call("removehotspottest('" + vo.name + "');");
+                        });
+                    }
+                    if (typeof(json.data.hot.right) != 'undefined' && (json.data.hot.right != '')) {
+                        last_right_json = json.data.hot.right;
+                        hot_right_json_list = json.data.hot.right;
+                    } else {
+                        last_right_json = [];
+                        hot_right_json_list = [];
+                    }
+
+                    parsing(json.data.hot);  //添加新的热点
+
+                    //如果左侧节点选的日期，在对比集合中没有对比过，那么就对比 日期最相邻的日期
+                    if (about_vs_date_list[left_id]) {
+                        highlight_vs(about_vs_date_list[left_id]);
+                    }
+
+                    //重新刷新对比规则(下拉列表禁选状态)
+                    vsRule($("#date_select_left").find("option:selected").attr("data-time"));
+                }
+
+
+            });
+        });
+
+        //隐藏显示热点
+        $("#hidden_hot").click(function () {
+            var _this = $(this);
+            if (_this.text() == '隐藏热点') {
+                //隐藏左边
+                if (hot_left_json_list != null) {
+                    $.each(hot_left_json_list, function (index, vo) {
+                        krpano.call("removehotspottest('" + vo.name + "');");
+                    });
+                }
+                if (hot_right_json_list != null) {
+                    $.each(hot_right_json_list, function (index, vo) {
+                        krpano2.call("removehotspottest('" + vo.name + "');");
+                    });
+                }
+                _this.text("显示热点").css("background", "#5BB85D");
+            } else {
+                if (hot_left_json_list != null) {
+                    $.each(hot_left_json_list, function (index, vo) {
+                        add_hot(vo, krpano);
+                    });
+                }
+                if (hot_right_json_list != null) {
+                    $.each(hot_right_json_list, function (index, vo) {
+                        add_hot(vo, krpano2);
+                    });
+                }
+                _this.text("隐藏热点").css("background", "#418BCA");
+            }
+        })
+    })
+
+    var index = parent.layer.getFrameIndex(window.name);
+    //关闭iframe
+    $('#closeIframe').click(function () {
+        parent.layer.close(index);      // parent.layer.title("..222..",index);
+    });
+
+    //添加热点
+    function add_hot(vo, p) {
+        var imgname = vo.name;
+        var ath = vo.x;
+        var atv = vo.y;
+        p.call("addhotspotTmp('" + imgname + "','" + ath + "','" + atv + "')");
+    }
+
+    //解析对比的热点数据
+    function parsing(json) {
+
+        if (isEmptyObject(json)) {
+            return;
+        }
+
+        //添加新的left热点
+        $.each(json.left, function (index, vo) {
+            add_hot(vo, krpano);
+        });
+        //添加新的right热点
+        $.each(json.right, function (index, vo) {
+            add_hot(vo, krpano2);
+        });
+        // last_left_json = json.left;
+        // last_right_json = json.right;
+    }
+
+    function isEmptyObject(e) {
+        var t;
+        for (t in e)
+            return !1;
+        return !0
+    }
+
+
+</script>
+
+<!--缩放全景-->
+<script type="text/javascript">
+    function syncRotateData(h, v) {
+        var tmpH = 0;
+        var tmpV = 0;
+        if (lastH > h) {
+            //h减小，向右拖动
+            tmpH = panoRightH - Math.abs(h - lastH);
+        } else if (lastH <= h) {
+            //h增大，向左拖动
+            tmpH = panoRightH + Math.abs(h - lastH);
+        }
+        if (lastV > v) {
+            //v减小，向下拖动
+            tmpV = panoRightV - Math.abs(v - lastV);
+
+        } else if (lastV <= v) {
+            //v增大，向上拖动
+            tmpV = panoRightV + Math.abs(v - lastV);
+        }
+        krpano2.call("updateHV('" + tmpH + "','" + tmpV + "');");
+        lastH = h;
+        lastV = v;
+    }
+
+    function syncRotateData2(h, v) {
+        panoRightH = krpano2.get("view[0].hlookat");
+        panoRightV = krpano2.get("view[0].vlookat");
+        krpano2.call("updateHV('" + h + "','" + v + "');");
+    }
+
+    function syncFovData(f) {
+        fovMax = krpano.get("view[0].fovmax");
+        fovMin = krpano.get("view[0].fovmin");
+        fMagnify = f;
+        fShrink = f;
+        krpano2.call("updateFov('" + f + "');");
+    }
+
+    function syncFovDataByKey(f) {
+        krpano.call("updateFov('" + f + "');");
+        syncFovData(f);
+    }
+    var ie;
+    var firefox;
+    if (document.all)
+        ie = true;
+    else ie = false;
+    document.onkeydown = keyPress;
+    document.onkeyup = keyUp;
+    var fovMax = 0;
+    var fovMin = 0;
+    var fMagnify = 0;//放大
+    var fShrink = 0;//缩小
+    var fTimeId = 0;
+    var keyPressFalg = false;
+    function keyPress() {
+        var key;
+        if (ie)
+            key = event.keyCode;
+        else
+            key = keyPress.arguments[0].keyCode;
+        if (key == 32 && entering == false) {
+            entering = true;
+            xPoint1 = krpano.get("mouse.x");
+            yPoint1 = krpano.get("mouse.y");
+        } else if (key == 90 && !keyPressFalg) {
+            //z键，放大，f缩小
+            keyPressFalg = true;
+            if (fMagnify == 0) {
+                fMagnify = krpano.get("view[0].fov");
+            }
+            fTimeId = setInterval(function () {
+                fMagnify--;
+                if (fMagnify < fovMin) {
+                    fMagnify = fovMin;
+                }
+                syncFovDataByKey(fMagnify);
+            }, 50);
+        } else if (key == 88 && !keyPressFalg) {
+            //x键，缩小，f放大
+            keyPressFalg = true;
+            if (fShrink == 0) {
+                fShrink = krpano.get("view[0].fov");
+            }
+            fTimeId = setInterval(function () {
+                fShrink++;
+                if (fShrink > fovMax) {
+                    fShrink = fovMax;
+                }
+                syncFovDataByKey(fShrink);
+            }, 50);
+        }
+    }
+
+    function keyUp() {
+        var key;
+        if (ie)
+            key = event.keyCode;
+        else
+            key = keyUp.arguments[0].keyCode;
+        if (key == 32 && entering == true) {
+            entering = false;
+            xPoint2 = krpano.get("mouse.x");
+            yPoint2 = krpano.get("mouse.y");
+            submit();
+        } else if (key == 90 || key == 88) {
+            clearInterval(fTimeId);
+            keyPressFalg = false;
+        }
+    }
+
+</script>
+
+
+</body></html>

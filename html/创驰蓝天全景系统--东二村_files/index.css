@@ -1,0 +1,150 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    list-style-type: none
+}
+
+html {
+    height: 100%;
+}
+
+div#pano {
+    width: 100%;
+    height: 100%;
+}
+
+@-ms-viewport {
+    width: device-width;
+}
+
+@media only screen and (min-device-width: 800px) {
+    html {
+        overflow: hidden;
+    }
+}
+
+body {
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+    background-color: #000000;
+}
+
+/*全景样式*/
+/*header*/
+#headerInfo {
+    width: 100%;
+    height: 40px;
+    background: #111d41;
+    position: fixed;
+    color: #b4b4b4;
+    line-height: 3.2;
+    top: 0;
+    z-index: 9999; overflow: hidden;
+    font-size: 13px;
+    /*filter: alpha(opacity=60);
+    -moz-opacity: 0.6;
+    opacity: 0.6;*/
+}
+p.loginuser {
+    float: left;
+    padding-left: 35px; overflow: hidden;
+    text-align: left;
+    width: 73%;
+}
+
+/*
+@media screen and (max-width: 1200px) {
+    .abc {width: 900px}
+}
+*/
+
+#headerInfo a {
+    color: #b4b4b4;
+}
+a.lll{ color:#2B2B2B; text-decoration: none;}
+#map_content{
+    font-size:12px;
+    width: 134px; height:135px;
+    color: #000000; overflow: hidden; background: #FFF;
+    position: absolute; bottom:10px; right: 4px;
+}
+#map_content .form-control{ display: inline; width: auto; height: 31px; padding: 0;}
+div#city_model{ padding:0 5px; display: none; position: relative;}
+#map_content span.index_map{ margin-left:25px; display: inline-block; min-width: 50px;  }
+#map_content span.min{ min-width: 60px; margin-right:15px; cursor: pointer; background: #434343; border-radius: 3px; padding: 3px 5px; color: #FFF;}
+#map_content span select, #map_content span input{border: 1px solid #ADADAD; text-align: center; width:120px;}
+#map_content span input.searchbox{ width: 100%;}
+#map_content span input{ text-align: left;}
+p.select_scene {
+    float: right;
+    height: 10px;
+    line-height: 3;
+    width: 23%;
+}
+select#date_select{
+	width: 190px;
+    background: #0b1531;
+    text-align: center;
+    border: 1px solid #0c75de;
+    color: #2d425d;
+    margin-left: 25px;
+	}
+p.select_scene select{ 
+	padding: 0 5px;
+    background:#fafdfe;
+    height:28px;
+    min-width:50px;
+    line-height:28px;
+    border:1px solid #9bc0dd;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius:2px;
+}
+#container{ background: #FFF;  overflow: hidden; padding-left:4px;}
+#container select{ border:1px solid #D8D8D8; min-width: 130px; margin:15px 0; text-align: center;}
+
+#start_vs{margin-left: 50px; cursor: pointer}
+#start_vs_all{margin-left: 50px; cursor: pointer}
+ span#hidden_hot{ 
+ 	border: 1px solid #0c75de;
+	background:rgb(17, 29, 65);
+ 	color: #fff; 
+ 	border-radius: 3px; 
+ 	display: inline-block; width: 87px;
+    height:30px;  
+    line-height: 2.3; 
+    cursor: pointer; 
+    text-align: center; 
+    margin-top: 5px;
+    filter: alpha(opacity=100); /* IE */
+    -moz-opacity: 1; /* Moz + FF */
+    opacity:1; /* 支持CSS3的浏览器（FF 1.5也支持）*/}
+
+span.version{
+	border: 1px solid #0c75de;
+	background:rgb(17, 29, 65);
+	border-radius: 3px;
+	cursor:pointer; 
+	line-height:2.5;  
+	height: 30px; 
+	padding:5px 10px; 
+	margin-left:1%; 
+	position: relative; 
+	text-align: right;
+}
+span.version i{ vertical-align: middle;}
+span.version:hover{ 
+	/*background: #5FBAB5; */
+}
+span.version a:hover,span.version a:active{ text-decoration: none;}
+
+
