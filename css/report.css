@@ -1,7 +1,7 @@
 ﻿
 /*通用样式结束*/
 
-.report{ width: 730px; height: auto; overflow: hidden; margin: 0 auto; }
+.report{ width: 100%; height: auto; overflow: hidden; margin: 0 auto; }
 .report h1{ width: 39%; height: 50px; margin:0; line-height: 50px; text-align: center; font-size: 16px; border-bottom: 1px solid #afafaf;}
 .report-top{ width: 41%; height: 200px; overflow: hidden;     float: left;}
 .report-top-left{ width: 280px; height: auto; float: left;border-right: 1px solid #afafaf; box-sizing: border-box;}
@@ -45,7 +45,7 @@
 
 
 .p2{overflow-x:auto; overflow: -webkit-paged-x;height: 370px;width: 850px; text-align: center;  padding: 5px; box-sizing: border-box;border-bottom: 1px solid #afafaf; }
-.p2 img{ float: left; height: 335px;overflow: hidden;margin-left: 3px}
+.p2 img{ float: left; height: 335px;overflow: hidden;margin-left: 3px;margin-top:40px}
 .p2 li label{ width: 100%; height: 335px; overflow: hidden; display: block;}
 .p2 li h4{ width: 100%; height: 30px; line-height: 30px; text-align: center;}
 

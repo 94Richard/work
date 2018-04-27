@@ -1,6 +1,9 @@
 ﻿@charset "utf-8";
 /* CSS Document */
 /*ALL*/
+* {
+   box-sizing: border-box;
+}
 body,td,th {
 	font-size: 12px;
 	color: #93ccf5;
@@ -11,12 +14,12 @@ body {
 	margin-right: 0px;
 	margin-bottom: 0px;
     /* width:3800px; */
-    width:100%;
+    width:1920px;
 	/*height:1075px;*/
 	background:#1c2a4f;
 	overflow-y:auto;
 	overflow-X:auto;
-	font-family:"微软雅黑";
+    font-family:"微软雅黑";
 }
 ul li,ul,a,h1,h2,h3,h5,h5{
 	margin:0;
@@ -96,7 +99,7 @@ div#title H1{ font-size:26PX;
 			   line-height:70px;}
 /*主容器*/
   #demoCon{
-	  width:100%;
+	  width:1920px;
 	  /*height:960px;*/
 	  margin:10px auto;
 	  overflow:hidden;
@@ -105,9 +108,9 @@ div#title H1{ font-size:26PX;
   /*左侧布局*/
   #Left{
   /*width:750px;*/
-  width:50%;
+  width:880px;
   height:960px;
-  /*float:left;*/
+  float:left;
   margin-left:15px;
   overflow:hidden;
   position:relative;
@@ -126,12 +129,12 @@ div#title H1{ font-size:26PX;
 	   div#LfetTop div.AreaBox{
 	       height:130px;
 	       /*width:230px;*/
-           width:60%;
+           width:270px;
 	       float: left;
 	   }
 
        #gaodeMapContainer {
-           width:730px;
+           width:100%;
            height:210px;
 		   border-radius:5px;
        }
@@ -139,7 +142,7 @@ div#title H1{ font-size:26PX;
 	   
        div#LfetTop div#Area1{ float:left;}
 	   div#LfetTop div#Area2{ float:right; margin-right:20px;}
-	   div#LfetTop div#Area3{ float:right; margin-right:5px;width:40%}
+	   div#LfetTop div#Area3{ float:right; margin-right:5px;width:280}
 
        div#LfetTop div.Area_top span.t{
 		   display:block;
@@ -182,19 +185,19 @@ div#title H1{ font-size:26PX;
 	    div#LfetTop div.Area_B div.c span.f{ }
 	 
     
-	div#HotMap{  height:460px; overflow:hidden; padding:5px; width:731px; 
+	div#HotMap{  height:460px; overflow:hidden; padding:5px; width:100%; 
 	   position:absolute;
 	   top:153px;
 	 
  }
- div#HotMap .hotMap{ width:731px; height:375px; border-radius:5px; overflow:hidden;}
+ div#HotMap .hotMap{ width:100%; height:375px; border-radius:5px; overflow:hidden;}
  div#HotMap .hotMap img{ width:100%; height:100%}
  
  div#HotMap div.tit{ position:absolute;  bottom:15px; width:700px; height:36px; line-height:36px; display:block; text-align:right; font-size:24px; color:#fa4f31;
  background:none; padding-right:30px;   left:15px; font-weight:bold;}
  
  div#DataTable{
-	   width:731px;
+	   width:100%;
 	   height:290px;
 	   padding:5px;
 	   overflow:hidden;
@@ -224,10 +227,9 @@ div#title H1{ font-size:26PX;
   
   #Center{
       /*width:2100px;*/
-      width:100%;
       height:952px;
       /*float:left;*/
-      margin-left:35px;
+      margin:0 35px;
       overflow:hidden;
       position:relative;
   
@@ -259,7 +261,7 @@ div#title H1{ font-size:26PX;
   div.ImageShowRightCon li{ display:block; width:100%; height:260px; clear:both;}
   div.ImageShowRightCon li img{ width:100%; height:100%;}
   
-  div#Right{width:50%;
+  div#Right{width:1000px;
   height:auto;
   float:right;
   margin-right:15px;
@@ -271,8 +273,8 @@ div#title H1{ font-size:26PX;
   div#Righttop div.data2{ position:absolute; width:210px; height:210px; z-index:999; left:-40px; top:45px; }
   div#Righttop div#pieChartStatic{ width:200px; height:200px; float:left; }
   
-  div#Righttop div.RTinner1{ width:285px; float:left; height:auto; }
-  div#Righttop div.RTinner2{ float:right; width:500px; margin-right:5px; position:relative;}
+  div#Righttop div.RTinner1{ width:360px; float:left; height:261px; }
+  div#Righttop div.RTinner2{ float:right; width:630px; margin-right:5px; position:relative;}
   
   div#Righttop div.RTinner2 .inner,div#Righttop div.RTinner1 .inner{ height:220px; width:100%; padding:5px; position:relative;}
   div#Righttop div.AreaBox div.title{ height:35px; width:100%; line-height:35px; text-align:center; background:#243666; font-size:16px; font-weight:600;}
@@ -291,14 +293,14 @@ div#title H1{ font-size:26PX;
   div#Righttop div.RTinner2 dd span.t{ float:left; height:100%; line-height:25px; margin-left:8px;}
   
 
-  div#RightCenter{ width:820px; height:350px; clear:both; position:relative; margin-top:10px;}
+  div#RightCenter{ width:100%; height:350px; clear:both; position:relative; margin-top:10px;}
   div#RightCenter div.title{ height:35px; width:100%; line-height:35px; text-align:center; background:#243666; font-size:16px; font-weight:600;}
   div#RightCenter div.data1{ width:250px; height:210px; position:absolute; left:5px; top:65px;}
   div#RightCenter div#pieChartStaticStreet{ width:100%; height:100%;}
   div#RightCenter div#barChartCommunity{ width:580px; height:250px; position:absolute; right:15px; top:45px;}     
   
  
-  div#RightBot{ width:100%; height:auto; overflow:hidden; margin-top:20px; clear:both;}
+  div#RightBot{ width:100%; height:auto; overflow:hidden; margin-top:35px; clear:both;}
  
  
  
@@ -306,11 +308,11 @@ div#title H1{ font-size:26PX;
 
   
 
-    div.ldArea2{ width:240px; height:245px; float:left; overflow:hidden; margin-top:20px}
+    div.ldArea2{ width:300px; height:245px; float:left; overflow:hidden; margin-top:20px}
     div.ldArea2 div.title{ height:35px; width:100%; line-height:35px; text-align:center; background:#243666; font-size:16px; font-weight:600;}
     div.ldArea2 div.inner{ width:300px;  height:300px; overflow:hidden; position:relative;  margin-left: -24px;float:left}
   
-  div.zxtArea{ width:565px; height:245px; float:right; overflow:hidden; margin-top:20px; margin-right:5px; font-size:16px; font-weight:600;}
+  div.zxtArea{ width:685px; height:245px; float:right; overflow:hidden; margin-top:20px; margin-right:5px; font-size:16px; font-weight:600;}
   div.zxtArea div.title{ height:35px; width:100%; line-height:35px; text-align:center; background:#243666;}
   div.zxtArea div.inner{ width:565px;  height:auto; overflow:hidden; position:relative; margin-top: -46px;    margin-left: -8px;}
 
